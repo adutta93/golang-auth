@@ -23,7 +23,7 @@ func main() {
 		r.JSON(200, gin.H{"Success": "Access granted"})
 	})
 
-	router.GET("/api/hi", func(r *gin.Context) {
+	router.GET("/api/", func(r *gin.Context) {
 		r.JSON(200, gin.H{"Success": "Access granted + hi"})
 	})
 
